@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header,
+footer {
+  background: #15161d;
+  color: #fff;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.Menu-Buttom {
+  cursor: pointer;
+}
+
+.Menu-Buttom,
+.Logo-text {
+  display: none;
+}
+
+.menu ul>li {
+  padding: 0 15px;
+}
+
+.menu ul>li>a>span {
+  color: #00a202;
+}
+
+.menu ul>li>a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #00a202;
+  transition: all 0.2s;
+}
+
+.menu ul>li>a>span:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background-color: #00a202;
+}
+
+.menu ul>li>a:hover::after {
+  width: 100%;
+}
+
+.Logo-text>span {
+  color: #00a202;
+}
+
+#Main-Border {
+  border-radius: 3.25rem;
+  border: 1px solid #1e1f29;
+  width: 70%;
+  margin: 20px auto
+}
+
+#Main-Border>section {
+  display: flex;
+  justify-content: space-around;
+}
+
+#Banner-Section {
+  position: relative;
+}
+
+#Banner-Section>div {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#Banner-Section>div h2 {
+  font-size: 2.5em;
+}
+
+#Banner-Section>div p {
+  padding: 10px 150px;
+}
+
+#Banner-Section>div button {
+  border: 0;
+  margin-top: 20px;
+}
+
+#Banner-Section>div a {
+  background-color: #00a202;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  display: grid;
+}
+
+.container-row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main #Banner-Section {
+  padding-top: 20px;
+  background: #e5e6ef;
+  height: 15rem;
+  border-top-left-radius: 3.25rem;
+  border-top-right-radius: 3.25rem;
+  flex-shrink: 0;
+}
+
+main .container-row img {
+  width: 17.6875rem;
+  height: 13.375rem;
+  flex-shrink: 0;
+}
+
+main .container-row>div {
+  margin: 20px 30px;
+}
+
+main .container-row>div>span {
+  padding: 70px;
+}
+
+.Product-Name {
+  color: #1e1f29;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 30px;
+}
+
+.Price {
+  color: #00a202;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 30px;
+}
+
+.Right-Arrow {
+  left: 105%;
+}
+
+.Left-Arrow {
+  left: -10%;
+}
+
+.Right-Arrow,
+.Left-Arrow {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+}
+
+main .container-row>div>button {
+  margin: 0 auto;
+  display: block;
+  width: 13.9375rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  border: 0px;
+  background: rgba(0, 162, 2, 0.88);
+}
+
+main .container-row>div>button>a {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .container-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+footer .container-row>div {
+  height: 80%;
+  text-align: start;
+  vertical-align: top;
+}
+
+#location>p {
+  width: 300px;
+  overflow-wrap: break-word;
+}
+
+.right-line {
+  position: relative;
+  width: 400px;
+}
+
+.right-line::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0.0625rem;
+  height: 11rem;
+  background-color: #fff;
+  left: 95%;
+  top: 0;
+  transition: all 0.2s;
+}
+
+@media (max-width: 1600px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .Right-Arrow,
+  .Left-Arrow {
+    display: none;
+  }
+
+  #Main-Border {
+    border: 0px;
+  }
+
+  footer .container .container-row {
+    display: flex;
+  }
+
+  footer .container .container-row>h1 {
+    margin: 2rem 0 2rem 0;
+  }
+
+  footer .container .container-row>div {
+    margin-bottom: 3em;
+  }
+
+  footer .container .container-row>div {
+    width: 100%;
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+
+  footer .container .container-row>div>h2 {
+    margin-bottom: 1rem;
+  }
+
+  footer img {
+    margin-bottom: 1.5rem;
+  }
+
+  .right-line>ul>li {
+    padding-bottom: .5rem;
+  }
+
+  #location {
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  #location>p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .right-line::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 13rem;
+    height: 0.0625rem;
+    background-color: #fff;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+  }
+
+  #Banner-Section {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: #e5e6ef;
+  }
+
+  #Banner-Section img {
+    position: absolute;
+    top: 0;
+    width: 500%;
+    height: 100%;
+  }
+
+  #Banner-Section>div {
+    position: absolute;
+    padding: 20px 0 0 0;
+  }
+
+  #Banner-Section>div p {
+    padding: 0 0 .5rem 0;
+  }
+
+  #Banner-Section>div h2 {
+    font-size: 1.75em;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .show-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: -99;
+    background-color: #15161d;
+  }
+
+  .header-nav>div {
+    display: flex;
+    line-height: 60px;
+  }
+
+  #Main-Border {
+    border: 0px;
+  }
+
+  .Menu-Buttom,
+  .Logo-text {
+    display: block;
+  }
+
+  .Logo-Img {
+    display: none;
+  }
+
+  .Right-Arrow,
+  .Left-Arrow {
+    display: none;
+  }
+
+  .menu ul {
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    background-color: #15161d;
+  }
+
+  .menu ul>li {
+    padding-top: 10px;
+  }
+
+  .menu ul>li>a::after {
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #00a202;
+    transition: all 0.2s;
+  }
+
+  .menu ul>li>a>span:after {
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background-color: #15161d;
+  }
+
+  .menu ul>li>a:hover::after {
+    width: 0%;
+  }
+
+  footer .container .container-row {
+    display: flex;
+  }
+
+  footer .container .container-row>h1 {
+    margin: 2rem 0 2rem 0;
+  }
+
+  footer .container .container-row>div {
+    margin-bottom: 3em;
+  }
+
+  footer .container .container-row>div,
+  footer .container .container-row>h1 {
+    width: 100%;
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+
+  footer .container .container-row>div>h2 {
+    margin-bottom: 1rem;
+  }
+
+  .right-line>ul>li {
+    padding-bottom: .5rem;
+  }
+
+  #location {
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  #location>p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .right-line::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 13rem;
+    height: 0.0625rem;
+    background-color: #fff;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+  }
+
+  #Banner-Section {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: #e5e6ef;
+  }
+
+  #Banner-Section img {
+    position: absolute;
+    top: 0;
+    width: 500%;
+    height: 100%;
+  }
+
+  #Banner-Section>div {
+    position: relative;
+    padding: 20px 0 0 0;
+  }
+
+  #Banner-Section>div p {
+    padding: 0 0 .5rem 0;
+  }
+
+  #Banner-Section>div h2 {
+    font-size: 1.75em;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+main>div>form>div {
+    justify-content: center;
+    align-items: center;
+}
+
+form>div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form>div>div {
+    position: relative;
+    width: 35%;
+    margin: 1rem 0 1rem .5rem;
+}
+
+form>input {
+    margin: 1em auto 0 auto;
+    border-radius: 0.8125rem;
+    background: #00A202;
+    padding: 10px 15px;
+    flex-shrink: 0;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#Terms {
+    flex-wrap: nowrap;
+}
+
+#Terms>label {
+    padding-left: 5px;
+}
+
+#Terms span {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    border: #000 1px solid;
+    padding: .5rem;
+}
+
+.placeholder {
+    position: absolute;
+    left: 20px;
+    top: -11px;
+    background-color: #fff;
+}
+
+.div-border {
+    margin: 5rem auto;
+    width: 60%;
+    padding: 20px;
+    flex-shrink: 0;
+    border-radius: 1.4375rem;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    text-align: center;
+}
+
+header,
+footer {
+    background: #15161d;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer {
+    margin-top: 150px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.Menu-Buttom {
+    cursor: pointer;
+}
+
+.Menu-Buttom,
+.Logo-text {
+    display: none;
+}
+
+.menu ul>li {
+    padding: 0 15px;
+}
+
+.menu ul>li>a>span {
+    color: #00a202;
+}
+
+.menu ul>li>a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #00a202;
+    transition: all 0.2s;
+}
+
+.menu ul>li>a>span:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background-color: #00a202;
+}
+
+.menu ul>li>a:hover::after {
+    width: 100%;
+}
+
+.Logo-text>span {
+    color: #00a202;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer .container-row {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+footer .container-row>div {
+    height: 80%;
+    text-align: start;
+    vertical-align: top;
+}
+
+#location>p {
+    width: 300px;
+    overflow-wrap: break-word;
+}
+
+.right-line {
+    position: relative;
+    width: 400px;
+}
+
+.right-line::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0.0625rem;
+    height: 11rem;
+    background-color: #fff;
+    left: 95%;
+    top: 0;
+}
+
+.container {
+    display: grid;
+}
+
+.container-row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 1600px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .Right-Arrow,
+    .Left-Arrow {
+        display: none;
+    }
+
+    #Main-Border {
+        border: 0px;
+    }
+
+    footer .container .container-row {
+        display: flex;
+    }
+
+    footer .container .container-row>h1 {
+        margin: 2rem 0 2rem 0;
+    }
+
+    footer .container .container-row>div {
+        margin-bottom: 3em;
+    }
+
+    footer .container .container-row>div {
+        width: 100%;
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+
+    footer .container .container-row>div>h2 {
+        margin-bottom: 1rem;
+    }
+
+    footer img {
+        margin-bottom: 1.5rem;
+    }
+
+    .right-line>ul>li {
+        padding-bottom: .5rem;
+    }
+
+    #location {
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    #location>p {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .right-line::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 13rem;
+        height: 0.0625rem;
+        background-color: #fff;
+        left: 50%;
+        top: 120%;
+        transform: translateX(-50%);
+        transition: all 0.2s;
+    }
+}
+
+@media (max-width: 800px) {
+
+    form>div>div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .show-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: -99;
+        background-color: #15161d;
+    }
+
+    .header-nav>div {
+        display: flex;
+        line-height: 60px;
+    }
+
+    .Menu-Buttom,
+    .Logo-text {
+        display: block;
+    }
+
+    .Logo-Img {
+        display: none;
+    }
+
+    .Right-Arrow,
+    .Left-Arrow {
+        display: none;
+    }
+
+    .menu ul {
+        display: inline-block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 99;
+        background-color: #15161d;
+    }
+
+    .menu ul>li {
+        padding-top: 10px;
+    }
+
+    .menu ul>li>a::after {
+        display: block;
+        width: 0%;
+        height: 3px;
+        background-color: #00a202;
+        transition: all 0.2s;
+    }
+
+    .menu ul>li>a>span:after {
+        display: block;
+        width: 100%;
+        height: 2.5px;
+        background-color: #15161d;
+    }
+
+    .menu ul>li>a:hover::after {
+        width: 0%;
+    }
+
+    footer .container .container-row {
+        display: flex;
+    }
+
+    footer .container .container-row>h1 {
+        margin: 2rem 0 2rem 0;
+    }
+
+    footer .container .container-row>div {
+        margin-bottom: 3em;
+    }
+
+    footer .container .container-row>div,
+    footer .container .container-row>h1 {
+        width: 100%;
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+
+    footer .container .container-row>div>h2 {
+        margin-bottom: 1rem;
+    }
+
+    .right-line>ul>li {
+        padding-bottom: .5rem;
+    }
+
+    #location {
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    #location>p {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .right-line::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 13rem;
+        height: 0.0625rem;
+        background-color: #fff;
+        left: 50%;
+        top: 120%;
+        transform: translateX(-50%);
+    }
+}
