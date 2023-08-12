@@ -266,6 +266,40 @@ footer .container-row>div {
   transition: all 0.2s;
 }
 
+#Pages {
+  width: auto;
+  text-align: center;
+  margin: 3em;
+}
+
+#Pages>a>span {
+  color: white;
+  background-color: #00a202;
+  width: 40px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+#Pages a {
+  text-decoration: none;
+  background-color: #e5e6ef;
+  color: black;
+  width: 40px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+#Pages #pagina-selecionada {
+  background-color: transparent;
+}
+
+#Pages a:hover {
+  filter: brightness(90%);
+  transition: .3s;
+}
+
 @media (max-width: 1600px) {
   html {
     overflow-x: hidden;
